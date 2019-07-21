@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import ApiService from "@/api";
+import ApiService from "@/api"
 
 Vue.use(Vuex)
 
