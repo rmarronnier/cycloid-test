@@ -1,25 +1,23 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link>|
-      <router-link to="/breweries">List of breweries</router-link>
+  <v-app>
+    <div id="app">
+<router-view />
     </div>
-    <router-view />
-  </div>
+  </v-app>
 </template>
 
 <script>
-import APITests from "@/tests"
+import APITests from "@/tests";
 
 export default {
   beforeMount() {
     if (process.env.NODE_ENV === "development") {
-console.log("API Tests")
-APITests("getbreweries")
-APITests("getbrewerybyid")
+      console.log("API Tests");
+      APITests("getbreweries");
+      APITests("getbrewerybyid");
     }
   }
-}
+};
 </script>
 
 

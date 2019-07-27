@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
 import BreweriesList from './views/BreweriesList.vue'
 import Brewery from './views/Brewery.vue'
 
@@ -12,11 +11,6 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home
-    },
-    {
-      path: '/breweries',
       name: 'breweries',
       component: BreweriesList
     },
